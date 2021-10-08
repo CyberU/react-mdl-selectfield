@@ -1,66 +1,4 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "react-mdl-selectfield@github:bk3/react-mdl-selectfield-react-16",
-        "scope": null,
-        "escapedName": "react-mdl-selectfield",
-        "name": "react-mdl-selectfield",
-        "rawSpec": "github:bk3/react-mdl-selectfield-react-16",
-        "spec": "github:bk3/react-mdl-selectfield-react-16",
-        "type": "hosted",
-        "hosted": {
-          "type": "github",
-          "ssh": "git@github.com:bk3/react-mdl-selectfield-react-16.git",
-          "sshUrl": "git+ssh://git@github.com/bk3/react-mdl-selectfield-react-16.git",
-          "httpsUrl": "git+https://github.com/bk3/react-mdl-selectfield-react-16.git",
-          "gitUrl": "git://github.com/bk3/react-mdl-selectfield-react-16.git",
-          "shortcut": "github:bk3/react-mdl-selectfield-react-16",
-          "directUrl": "https://raw.githubusercontent.com/bk3/react-mdl-selectfield-react-16/master/package.json"
-        }
-      },
-      "/Users/lgrannis/NewCMS"
-    ]
-  ],
-  "_from": "bk3/react-mdl-selectfield-react-16",
-  "_id": "react-mdl-selectfield@0.3.0",
-  "_inCache": true,
-  "_location": "/react-mdl-selectfield",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "react-mdl-selectfield@github:bk3/react-mdl-selectfield-react-16",
-    "scope": null,
-    "escapedName": "react-mdl-selectfield",
-    "name": "react-mdl-selectfield",
-    "rawSpec": "github:bk3/react-mdl-selectfield-react-16",
-    "spec": "github:bk3/react-mdl-selectfield-react-16",
-    "type": "hosted",
-    "hosted": {
-      "type": "github",
-      "ssh": "git@github.com:bk3/react-mdl-selectfield-react-16.git",
-      "sshUrl": "git+ssh://git@github.com/bk3/react-mdl-selectfield-react-16.git",
-      "httpsUrl": "git+https://github.com/bk3/react-mdl-selectfield-react-16.git",
-      "gitUrl": "git://github.com/bk3/react-mdl-selectfield-react-16.git",
-      "shortcut": "github:bk3/react-mdl-selectfield-react-16",
-      "directUrl": "https://raw.githubusercontent.com/bk3/react-mdl-selectfield-react-16/master/package.json"
-    }
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "git://github.com/bk3/react-mdl-selectfield-react-16.git#ecfe56accc275cb01c954da6f41477416e856c3f",
-  "_shasum": "cf43681ca6b52d98950d6b5429a4d856a93e6c12",
-  "_shrinkwrap": null,
-  "_spec": "react-mdl-selectfield@github:bk3/react-mdl-selectfield-react-16",
-  "_where": "/Users/lgrannis/NewCMS",
-  "author": {
-    "name": "Bojan Hribernik",
-    "email": "bojan.hribernik@gmail.com",
-    "url": "http://climbuddy.com/"
-  },
-  "bugs": {
-    "url": "https://github.com/HriBB/react-mdl-selectfield/issues"
-  },
   "dependencies": {
     "@kadira/storybook-deployer": "^1.1.0",
     "classnames": "^2.2.5",
@@ -109,7 +47,6 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2"
   },
-  "gitHead": "ecfe56accc275cb01c954da6f41477416e856c3f",
   "homepage": "https://hribb.github.io/react-mdl-selectfield/",
   "jsnext:main": "es/index.js",
   "keywords": [
@@ -141,12 +78,9 @@
     "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack --progress --verbose --colors",
     "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack --progress --verbose --colors",
     "clean": "rimraf lib dist es",
-    "deploy-storybook": "storybook-to-ghpages",
     "lint": "eslint src/** test/**",
     "prepublish": "npm run clean && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "start": "npm run storybook",
-    "storybook": "cross-env NODE_ENV=development start-storybook -p 9002",
     "test": "mocha --require test/config/setup 'test/*.js'",
     "test:cover": "istanbul cover -x *.test.js _mocha -- -R spec --require test/config/setup 'test/*.js'"
   },
